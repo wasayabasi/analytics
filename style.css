@@ -12,7 +12,7 @@ body{
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background: #222;
+    background: #1F2833;
      
 }
 .wrapper{
@@ -36,7 +36,7 @@ header{
 .logo i{
     height: 45px;
     width: 45px;
-    background-color: #007ced;
+    background-color: #45a29e;
     border-radius: 50%;
     color: #fff;
     font-weight: 700;
@@ -63,7 +63,7 @@ nav .togglebtn{
 }
 nav .togglebtn span{
     display: block;
-    background-color: #007ced;
+    background-color: #66FcF1;
     margin: 5px 0px;
     width: 100%;
     height:3px;
@@ -78,7 +78,7 @@ nav .navlinks li{
     display: inline-block;
 }
 nav .navlinks li a{
-    color:#e5e5e5;
+    color: #c5c6c7;
     margin-right: 2.5rem;
 
 }
@@ -113,56 +113,56 @@ nav .navlinks li a{
 
 .hero-text h5 {
     margin-bottom: 10px; /* Adjust the margin-bottom as needed */
-    color: #e5e5e5;
+    color: #c5c6c7;
     font-size: 14px;
 }
 
 .hero-text p {
     
     margin-top: 20px;
-    color: #e5e5e5;
+    color: #c5c6c7;
 }
 .hero-text h5{
-    color: #e5e5e5;
+    color: #c5c6c7;
     font-size: 14px;
 }
 .hero-text h5 span{
-    color: #007ced;
+    color: #66FcF1;
     font-size: 16px;
 }
 .hero-text h1{
-    color: #007ced;
+    color: #66FcF1;
     font-size: 3rem;
 }
 .hero-text p{
-    color: #e5e5e5;
+    color: #c5c6c7;
 
 }
 .btn-group{
     margin: 45px 0;
 }
 .btn-group .btn{
-    border-color: #e5e5e5; 
-    color: #fff;
+    border-color: #c5c6c7; 
+    color: #c5c6c7;
     background-color: #333;
     padding: 12px 25px;
     margin: 5px 0;
     margin-right: 7px;
     border-radius: 30px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid #c5c6c7;
     box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 .btn.active{
-    border-color: #007ced;
+    border-color: #66FcF1;
 }
 .hero-text .social i{
-    color: #e5e5e5;
+    color: #c5c6c7;
     font-size: 18px;
     margin-right: 10px;
     transition: 0.5s;
 }
 .hero-text .social i:hover{
-    color :#007ced;
+    color :#66FcF1;
     transform: rotate(360deg);
 }
 /*responsive design and displaying nav bar for small screen*/
