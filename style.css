@@ -51,7 +51,7 @@ header{
     font-weight: 500;
     color: #fff;
 }
-nav .togglebin{
+nav .togglebtn{
     width: 35px;
     height: 35px;
     position: absolute;
@@ -61,7 +61,7 @@ nav .togglebin{
     cursor: pointer;
     display: none;
 }
-nav .togglebin span{
+nav .togglebtn span{
     display: block;
     background-color: #007ced;
     margin: 5px 0px;
