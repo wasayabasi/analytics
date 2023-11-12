@@ -28,10 +28,10 @@
                     <ul class="navlinks">
                         <li><a href="#homeid">Home</a></li>
                         <li><a href="#resumeid">Resume</a></li>
-                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#portfolioid">Portfolio</a></li>
 
                         
-                        <li><a href="#">Goal</a></li>
+                        <li><a href="#goalid">Goal</a></li>
                     </ul>
                 </nav>
             </header>
@@ -74,7 +74,7 @@
         })
 
         var typed=new Typed(".input",{
-            strings:[ "Data Engineer", "Junior Machine Learning Engineer"],
+            strings:[ "Data Engineer", "Machine Learning Engineer"],
             typedSpeed:90,
             backSpeed:90,
             loop:true
@@ -148,5 +148,57 @@
     // Attach the downloadCV function to the click event of the "Download CV" button
     document.getElementById('downloadResume').addEventListener('click', downloadResume);
 </script>
+
+<div class="portfolio-section" id="portfolioid">
+    <div class="wrapper">
+        <section class="portfolio-content">
+            <h2>Portfolio</h2>
+           <!-- <p>I have not yet developed the portfolio section.</p>-->
+
+
+
+
+
+
+           <div class="project">
+            <h3>Mobalytics Gaming Market Research – Paragon One</h3>
+            <ul>
+                <li class="non-bullet">Extern, Data Analytics / October 23, 2023 - Present</li>
+                <li>Engaged in comprehensive data analysis to understand the video game landscape.</li>
+                <li>Utilized Python for data manipulation, cleaning, and exploratory data analysis.</li>
+                <li>Applied regression models to examine correlations among relevant variables.</li>
+                <li>Employed Tableau and Excel for visualization techniques to interpret data insights.</li>
+                <li>Ongoing development of skills in using analytical results for impactful presentations.</li>
+            </ul>
+        </div>
+        
+        <div class="project">
+            <h3>Presentation at Mobalytics Externship – Paragon One</h3>
+            <ul>
+                <li class="non-bullet">A Strategic Analysis for Mobalytics</li>
+                <li>Analyzed characteristics, player profiles, and the overall gaming experience.</li>
+                <li>Explored player communities, resources, and the broader ecosystem.</li>
+                <li>Summarized player needs and requests for informed decision-making.</li>
+                <li>Evaluated the competitive landscape and the business operations of industry giants.</li>
+            </ul>
+        </div>
+
+
+
+
+
+        </section>
+    </div>
+</div>
+
+
+<div class="goal-section" id="goalid">
+    <div class="wrapper">
+        <section class="goal-content">
+            <h2>Goal</h2>
+            <p>My goal is to specialize in Machine Learning, actively contributing to Omdena local chapter projects. I aspire to create impactful, data-driven solutions that showcase the power of ML in addressing real-world challenges and bring about positive change globally.</p>
+        </section>
+    </div>
+</div>
 </body>
 </html>
