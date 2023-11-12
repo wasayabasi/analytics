@@ -26,15 +26,16 @@
                         <span></span>
                     </div>
                     <ul class="navlinks">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#homeid">Home</a></li>
+                        <li><a href="#resumeid">Resume</a></li>
                         <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Blog</a></li>
+
+                        
                         <li><a href="#">Goal</a></li>
                     </ul>
                 </nav>
             </header>
-            <div class="container">
+            <div class="container" id="homeid">
                 <div class="hero-pic">
                     <img src="images/main_photo.jpg" alt="profile pic">
                 </div>
@@ -106,6 +107,46 @@
         // Attach the downloadCV function to the click event of the "Download CV" button
         document.getElementById('downloadCV').addEventListener('click', downloadCV);
     </script>
+
+
+<div class="resume-section" id="resumeid">
+    <div class="wrapper">
+        <section class="resume-content">
+            <h2>Resume</h2>
+            <p>See my specialized resume tailored to showcase my expertise, projects, and achievements in the realm of data-driven technologies.</p>
+            <div class="btn-group">
+                <a href="#" class="btn" id="downloadResume">Download Resume</a>
+            </div>
+        </section>
+    </div>
+</div>
     
+
+<script>
+    // Function to handle the download button click
+    function downloadResume() {
+        // Replace 'path/to/your/cv.pdf' with the actual path to your CV file
+        var cvPath = 'documents/resume.pdf';
+        
+        // Create a temporary anchor element
+        var link = document.createElement('a');
+        link.href = cvPath;
+        
+        // Set the download attribute with the desired filename
+        link.download = 'resume.pdf';
+        
+        // Append the anchor element to the document
+        document.body.appendChild(link);
+        
+        // Trigger a click on the anchor element to initiate the download
+        link.click();
+        
+        // Remove the anchor element from the document
+        document.body.removeChild(link);
+    }
+
+    // Attach the downloadCV function to the click event of the "Download CV" button
+    document.getElementById('downloadResume').addEventListener('click', downloadResume);
+</script>
 </body>
 </html>
