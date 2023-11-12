@@ -7,12 +7,18 @@
 }
 body{
     overflow-x: hidden;
+/** added by myself **/
+    background-image: url('images/bg.jpg');
+
+
+
 }
 .hero-header{
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background: #1F2833;
+    /**background: #1F2833;**/
+    background-color: rgba(0, 0, 0, 0.7); 
      
 }
 .wrapper{
@@ -78,7 +84,8 @@ nav .navlinks li{
     display: inline-block;
 }
 nav .navlinks li a{
-    color: #c5c6c7;
+   /** color: #c5c6c7;**/
+   color: #fff;
     margin-right: 2.5rem;
 
 }
@@ -113,17 +120,17 @@ nav .navlinks li a{
 
 .hero-text h5 {
     margin-bottom: 10px; /* Adjust the margin-bottom as needed */
-    color: #c5c6c7;
+    color: #fff;
     font-size: 14px;
 }
 
 .hero-text p {
     
     margin-top: 20px;
-    color: #c5c6c7;
+    color: #fff;
 }
 .hero-text h5{
-    color: #c5c6c7;
+    color: #fff;
     font-size: 14px;
 }
 .hero-text h5 span{
@@ -135,28 +142,28 @@ nav .navlinks li a{
     font-size: 3rem;
 }
 .hero-text p{
-    color: #c5c6c7;
+    color: #fff;
 
 }
 .btn-group{
     margin: 45px 0;
 }
 .btn-group .btn{
-    border-color: #c5c6c7; 
-    color: #c5c6c7;
+    border-color: #fff; 
+    color: #fff;
     background-color: #333;
     padding: 12px 25px;
     margin: 5px 0;
     margin-right: 7px;
     border-radius: 30px;
-    border: 2px solid #c5c6c7;
+    border: 2px solid #fff;
     box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 .btn.active{
     border-color: #66FcF1;
 }
 .hero-text .social i{
-    color: #c5c6c7;
+    color: #fff;
     font-size: 18px;
     margin-right: 10px;
     transition: 0.5s;
