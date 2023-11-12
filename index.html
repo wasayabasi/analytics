@@ -9,6 +9,7 @@
     <!----Font aweso,e cdn font icon css-->
     <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
 </head>
 <body>
     <div class="hero-header">
@@ -29,7 +30,7 @@
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Resume</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Goal</a></li>
                     </ul>
                 </nav>
             </header>
@@ -42,15 +43,17 @@
                     <h1>Wasay Ali</h1>
                     <p>I'm a Data Analyst. In my free time, you can catch me either boxing or simply sleeping.</p>
                     <div class="btn-group">
-                        <a href="#" class="btn active">Download CV</a>
-                        <a href="#" class="btn">Contact</a>
+                        <a href="#" class="btn active" id = "downloadCV">Download CV</a>
+                        <a href="mailto:wasay.abbs@gmail.com" class="btn">Email Me</a>
                     </div>
                     <div class="social">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-reddit"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100093025770066&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/wasay-ali-a270381b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com/binarybard0?igshid=MTZ1ajYwMDJ5eW5wNg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://reddit.com/avatar/shop?utm_medium=android_app&utm_source=share" target="_blank"><i class="fa-brands fa-reddit"></i></a>
+                        <a href="https://x.com/WasayAbasi?t=D2bHU7SH0Ex0N_0_EyXXiA&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                     <!--  <a href="https://www.facebook.com/your-facebook-profile" target="_blank"><i class="fa-brands fa-discord"></i></a>--> 
+                        <a href="https://github.com/wasayabasi" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -70,12 +73,39 @@
         })
 
         var typed=new Typed(".input",{
-            strings:[ "Data Engineer", "Machine Learning Engineer"],
+            strings:[ "Data Engineer", "Junior Machine Learning Engineer"],
             typedSpeed:90,
             backSpeed:90,
             loop:true
         })
 
     </script>
+    <script>
+        // Function to handle the download button click
+        function downloadCV() {
+            // Replace 'path/to/your/cv.pdf' with the actual path to your CV file
+            var cvPath = 'documents/cv.doc';
+            
+            // Create a temporary anchor element
+            var link = document.createElement('a');
+            link.href = cvPath;
+            
+            // Set the download attribute with the desired filename
+            link.download = 'cv.doc';
+            
+            // Append the anchor element to the document
+            document.body.appendChild(link);
+            
+            // Trigger a click on the anchor element to initiate the download
+            link.click();
+            
+            // Remove the anchor element from the document
+            document.body.removeChild(link);
+        }
+    
+        // Attach the downloadCV function to the click event of the "Download CV" button
+        document.getElementById('downloadCV').addEventListener('click', downloadCV);
+    </script>
+    
 </body>
 </html>
