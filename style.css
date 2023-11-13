@@ -280,7 +280,7 @@ body {
 }
 
 .resume-content p {
-     font-size: 18px;
+     font-size: 16px;
     margin-bottom: 40px;
 }
 
@@ -322,11 +322,11 @@ body {
 }
 
 .portfolio-content p {
-     font-size: 18px;
+     font-size: 16px;
     margin-bottom: 40px;
 }
 .project ul {
-    font-size: 18px;
+    font-size: 16px;
    text-align: left;
 }
 
@@ -360,7 +360,7 @@ body {
 }
 
 .goal-content p {
-     font-size: 18px;
+     font-size: 16px;
     margin-bottom: 40px;
     text-align: left;
 }
